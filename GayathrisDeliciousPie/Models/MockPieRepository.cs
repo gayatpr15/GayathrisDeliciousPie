@@ -15,5 +15,10 @@ namespace GayathrisDeliciousPie.Models
         public IEnumerable<Pie> PiesOfTheWeek => AllPies.Where(p => p.IsPieOfTheWeek);
 
         public Pie? GetPieById(int pieId) => AllPies.FirstOrDefault(p => p.PieId == pieId);
+
+        public IEnumerable<Pie> SearchPies(string searchQuery)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -29,5 +29,10 @@ namespace GayathrisDeliciousPie.Controllers
             
             
         }
+
+        public IActionResult Search() {
+
+            return View();
+        }
     }
 }

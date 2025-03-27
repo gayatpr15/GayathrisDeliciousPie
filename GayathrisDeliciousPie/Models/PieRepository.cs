@@ -29,5 +29,10 @@ namespace GayathrisDeliciousPie.Models
         {
             return _gayathrisPieShopDbContext.Pies.FirstOrDefault(p => p.PieId == pieId);
         }
+
+        public IEnumerable<Pie> SearchPies(string searchQuery)
+        {
+            return _gayathrisPieShopDbContext.Pies.Where(p => p.Name.Contains(searchQuery));
+        }
     }
 }
