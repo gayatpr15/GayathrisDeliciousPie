@@ -4,6 +4,10 @@
       "type": "mssql",
       "connectionId": "ConnectionStrings:GayathrisPieShopDbContextConnection",
       "dynamicId": null
+    },
+    "mssql2": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:GayathrisPieShopDbContextConnection1"
     }
   }
 }
